@@ -1,0 +1,23 @@
+{
+  "name": "alexa-sonarr",
+  "version": "1.0.0",
+  "description": "A skill to ask Alexa about your Sonarr series list.",
+  "main": "index.js",
+  "scripts": {
+    "build": "",
+    "zip": "cp -r {.env,package.json,index.js,src} dist/ && cd dist && npm install --production && bestzip ../test.zip ./* .env",
+    "bundle": "npm run build; npm run zip;",
+    "test-lambda": "npm run build; node-lambda run --handler dist/index.handler"
+  },
+  "author": "Alex Clark",
+  "license": "MIT",
+  "dependencies": {
+    "alexa-sdk": "^1.0.0",
+    "dotenv": "^2.0.0",
+    "sonarr-api": "^0.1.2",
+    "node-tvdb": "^2.0.17"
+  },
+  "devDependencies": {
+    "bestzip": "^1.1.3",
+  }
+}

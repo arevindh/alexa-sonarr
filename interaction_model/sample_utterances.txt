@@ -1,0 +1,4 @@
+AddSeriesIntent to add {seriesName}
+
+SeriesAirDateIntent when does {seriesName} next air
+SeriesAirDateIntent when is {seriesName} next on

@@ -1,0 +1,22 @@
+{
+  "intents": [
+    {
+      "intent": "AddSeriesIntent",
+      "slots": [
+        {
+          "name": "seriesName",
+          "type": "Series"
+        }
+      ]
+    },
+    {
+      "intent": "SeriesAirDateIntent",
+      "slots": [
+        {
+          "name": "seriesName",
+          "type": "Series"
+        }
+      ]
+    }
+  ]
+}
